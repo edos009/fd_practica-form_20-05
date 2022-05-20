@@ -9,43 +9,75 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header>
+    <div class="container">
       <section class="registration">
-        <h1 class="registration-title">
-          Register
-        </h1>
+        <h1 class="registration-title">Register</h1>
         <p class="registration-text">
           Create your account. It's free end only takes a minute.
         </p>
         <form class="registration-form">
+          <div class="block-user-info">
+            <input
+              class="form-input firstname"
+              type="text"
+              name="firstname"
+              placeholder="first name"
+              pattern="^[A-Z]{1}[a-z]{2,15}$"
+              autofocus
+              required
+            />
+            <input
+              class="form-input lastname"
+              type="text"
+              name="lastname"
+              placeholder="last name"
+              pattern="^[A-Z]{1}[a-z]{2,15}$"
+              required
+            />
+          </div>
           <input
-            class="form-input firstname"
-            type="text"
-            name="firstname"
-            autofocus
+            class="form-input email"
+            type="email"
+            name="email"
+            placeholder="email"
+            required
           />
-          <input class="form-input lastname" type="text" name="lastname" />
-          <input class="form-input email" type="email" name="email" />
-          <input class="form-input password" type="password" name="password" />
+          <input
+            class="form-input password"
+            type="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+          <input
+            class="form-input confirm-password"
+            type="password"
+            name="confirm-password"
+            placeholder="confirm password"
+            required
+          />
           <label class="form-label">
             <input
-              for=""
               class="form-input checkbox-agree"
               type="checkbox"
               name="checkbox-agree"
               value="agree"
+              required
             />
-            I accept the <a class="form-label-link" href="#">Terms of Use</a> & <a class="form-label-link" href="#">Privacy Policy.</a>
+            I accept the <a class="form-label-link" href="https://www.google.com.ua/" target="_blank">Terms of Use</a> &
+            <a class="form-label-link" href="https://www.google.com.ua/" target="_blank">Privacy Policy.</a>
           </label>
-          <input class="form-input btn-send" type="submit" value="Register Now">
+          <input
+            class="form-input btn-send"
+            type="submit"
+            value="Register Now"
+          />
         </form>
       </section>
       <p class="registration-question">
         Already have an account?
-        <a class="registration-question-link" href="#">
-          Sing in
-        </a>
+        <a class="registration-question-link" href="https://github.com/login" target="_blank"> Sing in </a>
       </p>
-    </header>
+    </div>
   </body>
 </html>

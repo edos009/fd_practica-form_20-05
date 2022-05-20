@@ -1,18 +1,165 @@
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 
   padding: 0;
   margin: 0;
 }
 
-:root{
-
+body {
+  background-color: var(--dark-blue-color);
+  font-family: sans-serif;
 }
 
-.container{
+:root {
+  --dark-blue-color: #63738a;
+  --light-grey-color: #f2f3f7;
+  --green-color: #19961c;
+}
+
+.container {
   max-width: 1130px;
   width: 100%;
 
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.registration {
+  max-width: 400px;
+
+  padding: 35px 30px;
+  border-radius: 3px;
+  margin: 50px auto 0;
+
+  background-color: var(--light-grey-color);
+}
+
+.registration-title {
+  margin-bottom: 17px;
+
+  position: relative;
+
+  color: #66625f;
+
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.registration-title::after,
+.registration-title::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+
+  position: absolute;
+  top: 50%;
+
+  background-color: #d2d3d7;
+}
+
+.registration-title::after {
+  left: 0;
+}
+
+.registration-title::before {
+  right: 0;
+}
+
+.registration-text {
+  margin-bottom: 30px;
+
+  color: #a2a6a9;
+
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-user-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-input {
+  padding: 12px;
+  border: 1px solid #cacbcf;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+  color: #a2a6a9;
+
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.form-input,
+.form-label,
+.form-input::placeholder {
+  color: #a2a6a9;
+
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+.form-input::placeholder {
+  text-transform: capitalize;
+}
+
+.firstname,
+.lastname {
+  flex-basis: 45%;
+  min-width: 130px;
+}
+
+.form-label {
+  margin-bottom: 20px;
+}
+
+.checkbox-agree {
+  margin: -2px 5px 0 0;
+}
+
+.form-label-link {
+  text-decoration: none;
+
+  color: rgb(2, 164, 2);
+}
+
+.btn-send {
+  padding-left: 100px;
+  padding-right: 100px;
+
+  background-color: var(--green-color);
+  color: #fff;
+
+  cursor: pointer;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+.registration-question,
+.registration-question-link {
+  margin-top: 20px;
+
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2em;
+
+  text-align: center;
 }
