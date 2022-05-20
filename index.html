@@ -8,5 +8,44 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <section class="registration">
+        <h1 class="registration-title">
+          Register
+        </h1>
+        <p class="registration-text">
+          Create your account. It's free end only takes a minute.
+        </p>
+        <form class="registration-form">
+          <input
+            class="form-input firstname"
+            type="text"
+            name="firstname"
+            autofocus
+          />
+          <input class="form-input lastname" type="text" name="lastname" />
+          <input class="form-input email" type="email" name="email" />
+          <input class="form-input password" type="password" name="password" />
+          <label class="form-label">
+            <input
+              for=""
+              class="form-input checkbox-agree"
+              type="checkbox"
+              name="checkbox-agree"
+              value="agree"
+            />
+            I accept the <a class="form-label-link" href="#">Terms of Use</a> & <a class="form-label-link" href="#">Privacy Policy.</a>
+          </label>
+          <input class="form-input btn-send" type="submit" value="Register Now">
+        </form>
+      </section>
+      <p class="registration-question">
+        Already have an account?
+        <a class="registration-question-link" href="#">
+          Sing in
+        </a>
+      </p>
+    </header>
+  </body>
 </html>
